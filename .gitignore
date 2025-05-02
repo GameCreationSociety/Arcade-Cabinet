@@ -1,4 +1,7 @@
-# games need to be downloaded locally,
-# they're too big to store on GitHub
+# most games will need to be downloaded locally,
+# since they're too big to store on GitHub
 
 /games
+
+# if you need to do a one-time transfer for a smaller
+# game you can use temp directory

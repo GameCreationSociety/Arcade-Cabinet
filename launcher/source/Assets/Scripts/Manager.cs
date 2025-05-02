@@ -31,7 +31,7 @@ public class Manager : MonoBehaviour
     {
         // set default parameters
         Cursor.visible = false;
-        Application.wantsToQuit += WantsToQuit;
+        // Application.wantsToQuit += WantsToQuit;
 
         menu = 0;
         selectedRange = SelectedRange.Top;
@@ -139,12 +139,5 @@ public class Manager : MonoBehaviour
     {
         GameInfoScreen.selectedGame = game;
         GameInfoScreen.instance.OpenInfoScreen(true);
-    }
-
-    // disable Alt + F4
-    // close using Escape + Alt + F4 or 5 + Quit
-    static bool WantsToQuit()
-    {
-        return Input.GetButton("Cancel");
     }
 }

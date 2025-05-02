@@ -46,8 +46,6 @@ public class GameInfoScreen : MonoBehaviour
             gameName.text = selectedGame.gameName;
             gameSubtitle.text = selectedGame.playerCount + " | " + selectedGame.year + " | " + selectedGame.genre;
             OpenSubMenu(0);
-
-            gameSubtitle.text = System.IO.Directory.GetCurrentDirectory();
         }
         else
             StartCoroutine(MenuClosed());
@@ -122,7 +120,7 @@ public class GameInfoScreen : MonoBehaviour
 
     void RunGameFromFolder(string extension)
     {
-        Utils.Run("\"" + gamesPath + "\\" + extension + "\"");
+        Utils.Run("\"..\\..\\games\\" + extension + "\"");
     }
 
     protected void OpenGame()
@@ -154,19 +152,23 @@ public class GameInfoScreen : MonoBehaviour
                 break;
 
             case "gamebytes2019":
-                Utils.Run("\"C:\\Users\\GameCreationSociety\\Desktop\\oldArcade\\Game Bytes Final\\Game Bytes.exe\"");
+                RunGameFromFolder("GameBytesF2019\\Game Bytes.exe");
                 break;
 
             case "gamebytes2020":
-                RunGameFromFolder("Game Bytes 2020\\Game Bytes.exe");
+                RunGameFromFolder("GameBytesF2020\\Game Bytes.exe");
                 break;
 
             case "gamebytes2021":
-                RunGameFromFolder("Game Bytes 2021\\Game Bytes.exe");
+                RunGameFromFolder("GameBytesF2021\\Game Bytes.exe");
                 break;
 
             case "gamebytes2024":
-                RunGameFromFolder("Game Bytes 2024\\Game Bytes Fall 2024.exe");
+                RunGameFromFolder("GameBytesF2024\\Game Bytes Fall 2024.exe");
+                break;
+
+            case "gamebytes2025":
+                RunGameFromFolder("GameBytesS2025\\Game Bytes.exe");
                 break;
 
             case "GuiltyGoose":
