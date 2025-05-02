@@ -7547,6 +7547,21 @@ PrefabInstance:
         Tom Cauchois - Programming Lead'
       objectReference: {fileID: 0}
     - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: controls
+      value: 'Joystick - Move
+
+        1 - Select
+
+        2 - Punch
+
+        3 -
+        Strong Punch
+
+        5 - Kick
+
+        6 - Strong Kick'
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: gameName
       value: Monk Combat 3
       objectReference: {fileID: 0}
@@ -8139,6 +8154,7 @@ RectTransform:
   - {fileID: 2099753186}
   - {fileID: 1135586584}
   - {fileID: 296728421}
+  - {fileID: 1529927236}
   - {fileID: 1670575535}
   - {fileID: 413581917}
   - {fileID: 436486496}
@@ -8175,6 +8191,215 @@ MonoBehaviour:
   m_Spacing: {x: 10, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!1001 &1529927235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1426952911}
+    m_Modifications:
+    - target: {fileID: 117079041037104358, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_text
+      value: F2017
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: year
+      value: Fall 2017
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: genre
+      value: Platformer
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: credits
+      value: 'Carter Williams - Lead
+
+        Dominic Calkosz - Programming
+
+        Edward
+        Shin - Art and Design
+
+        Adrian Mester - Sound, Music and Level Design
+
+        Phillip
+        lamkin - Level Design
+
+        Matthew Bofenkamp - Design, Programming,
+        Technical Designer'
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: gameName
+      value: Verto Amino
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: description
+      value: 'Verto Animo is a cooperative platformer with a twist: Each player controls
+        the movement of one character and the jumping of the other. Test your patience
+        and your friendships as you work together to complete each challenge.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: gameProfile
+      value: VertoAmino
+      objectReference: {fileID: 0}
+    - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: playerCount
+      value: 2 Players - Co-op
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717097304075443143, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749622008180200934, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749622008180200934, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858791787396812583, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896359593676191228, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ae2aa94743be3c468394b28f99b1b0b, type: 3}
+    - target: {fileID: 3437232946522752912, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Name
+      value: VertoAmino
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 1397427164}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Navigation.m_SelectOnRight
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1183368303}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenInfoScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: KnightNight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360351429790093099, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360351429790093099, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7edc7429e8863a64793efaa682c87c44, type: 3}
+    - target: {fileID: 8242460370004272755, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+      propertyPath: m_text
+      value: 2 Players
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+--- !u!224 &1529927236 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
+  m_PrefabInstance: {fileID: 1529927235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1553821560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8597,7 +8822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8605,7 +8830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8613,7 +8838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8645,11 +8870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 235
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -165
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 209416740063131685, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8717,7 +8942,6 @@ PrefabInstance:
       value: 'Draw your way out of a sketchpad fantasy!
 
 
-
         Dash Eraser stars
         an aspiring child artist stuck in his own sketchbook come to life. Armed
         with his trusty pencil (and his imagination), our little hero must defend
@@ -8750,7 +8974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437232946522752912, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6296473766149443098, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp

@@ -189,6 +189,10 @@ public class GameInfoScreen : MonoBehaviour
                 RunGameFromFolder("TanksOnPlanks", "Tanks On Planks.exe");
                 break;
 
+            case "VertoAmino":
+                RunGameFromFolder("VertoAnimo", "Verto Animo.exe");
+                break;
+
             // default profile
             // run game from \games\GameName\GameName.exe
             // with no extra commands
