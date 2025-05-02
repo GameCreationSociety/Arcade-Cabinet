@@ -4247,7 +4247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Experimental Game Design (60-148)
+  m_text: Experimental Game Design (60-418)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e95bfaadf65e9a344bd275234d938379, type: 2}
   m_sharedMaterial: {fileID: -127560942159646386, guid: e95bfaadf65e9a344bd275234d938379, type: 2}
@@ -6915,7 +6915,7 @@ GameObject:
   - component: {fileID: 1255173506}
   - component: {fileID: 1255173507}
   m_Layer: 0
-  m_Name: 60-148
+  m_Name: 60-418
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8305,8 +8305,8 @@ PrefabInstance:
         Phillip
         lamkin - Level Design
 
-        Matthew Bofenkamp - Design, Programming,
-        Technical Designer'
+        Matthew Bofenkamp - Design, Programming, Technical
+        Designer'
       objectReference: {fileID: 0}
     - target: {fileID: 790480876947444150, guid: d0f51024171f5ba4a962085d5c5a81d4, type: 3}
       propertyPath: controls
