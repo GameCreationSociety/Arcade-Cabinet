@@ -118,85 +118,82 @@ public class GameInfoScreen : MonoBehaviour
         Invoke("OpenGame", 0.1f);
     }
 
-    void RunGameFromFolder(string extension)
+    void RunGameFromFolder(string extension, string executable)
     {
-        Utils.Run("\"..\\..\\games\\" + extension + "\"");
+        // save current directory
+        // this will usually be \launcher\source or \launcher\build
+        string wdir = System.IO.Directory.GetCurrentDirectory();
+
+        // run game executable from games folder
+        // need to do this for some older games that require logging
+        try
+        {
+            System.IO.Directory.SetCurrentDirectory("..\\..\\games\\" + extension);
+            Utils.Run("\"" + executable + "\"");
+        }
+        catch (System.IO.DirectoryNotFoundException)
+        {
+            Debug.LogWarning("Could not find the specified game path: \\games\\" + extension);
+        }
+
+        // reset wdir or else Unity will get mad
+        System.IO.Directory.SetCurrentDirectory(wdir);
     }
 
     protected void OpenGame()
     {
         switch (selectedGame.gameProfile)
         {
-            case "Automajumper":
-                RunGameFromFolder("Automajumper\\Automajumper.exe");
-                break;
-
-            case "BikesOfFury":
-                RunGameFromFolder("BikesOfFury\\BikesOfFury.exe");
-                break;
-
-            case "Blitz":
-                RunGameFromFolder("Blitz\\Blitz.exe");
-                break;
-
-            case "BubbleDream":
-                RunGameFromFolder("BubbleDream\\BubbleDream.exe");
-                break;
-
+            // overrides for special profiles
             case "buggygame":
-                RunGameFromFolder("Buggy\\Buggy_2021_ver2.exe");
+                RunGameFromFolder("Buggy", "Buggy_2021_ver2.exe");
                 break;
 
             case "DashEraser":
-                RunGameFromFolder("DashEraserDust\\DED.exe");
+                RunGameFromFolder("DashEraserDust", "DED.exe");
                 break;
 
             case "gamebytes2019":
-                RunGameFromFolder("GameBytesF2019\\Game Bytes.exe");
+                RunGameFromFolder("GameBytesF2019", "Game Bytes.exe");
                 break;
 
             case "gamebytes2020":
-                RunGameFromFolder("GameBytesF2020\\Game Bytes.exe");
+                RunGameFromFolder("GameBytesF2020", "Game Bytes.exe");
                 break;
 
             case "gamebytes2021":
-                RunGameFromFolder("GameBytesF2021\\Game Bytes.exe");
+                RunGameFromFolder("GameBytesF2021", "Game Bytes.exe");
                 break;
 
             case "gamebytes2024":
-                RunGameFromFolder("GameBytesF2024\\Game Bytes Fall 2024.exe");
+                RunGameFromFolder("GameBytesF2024", "Game Bytes Fall 2024.exe");
                 break;
 
             case "gamebytes2025":
-                RunGameFromFolder("GameBytesS2025\\Game Bytes.exe");
-                break;
-
-            case "GuiltyGoose":
-                Utils.Run("TODO");
+                RunGameFromFolder("GameBytesS2025", "Game Bytes.exe");
                 break;
 
             case "KnightNight":
-                RunGameFromFolder("Knight Night\\KnightNight.exe");
+                RunGameFromFolder("Knight Night", "KnightNight.exe");
                 break;
 
             case "MonkCombat":
-                RunGameFromFolder("MonkCombat.win32\\MK3.exe");
-                break;
-
-            case "Pongg":
-                RunGameFromFolder("Pongg\\Pongg.exe");
+                RunGameFromFolder("MonkCombat.win32", "MK3.exe");
                 break;
 
             case "TanksInAdvance":
-                RunGameFromFolder("Tanks In Advance\\Tanks In Advance.exe");
+                RunGameFromFolder("Tanks In Advance", "Tanks In Advance.exe");
                 break;
 
             case "TanksOnPlanks":
-                RunGameFromFolder("TanksOnPlanks\\Tanks On Planks.exe");
+                RunGameFromFolder("TanksOnPlanks", "Tanks On Planks.exe");
                 break;
 
+            // default profile
+            // run game from \games\GameName\GameName.exe
+            // with no extra commands
             default:
-                Debug.LogError("Game profile " + selectedGame + " not recognised");
+                RunGameFromFolder(selectedGame.gameProfile, selectedGame.gameProfile + ".exe");
                 break;
         }
 
