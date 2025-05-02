@@ -189,7 +189,7 @@ public class GameInfoScreen : MonoBehaviour
                 RunGameFromFolder("TanksOnPlanks", "Tanks On Planks.exe");
                 break;
 
-            case "VertoAmino":
+            case "VertoAnimo":
                 RunGameFromFolder("VertoAnimo", "Verto Animo.exe");
                 break;
 
